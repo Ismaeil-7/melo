@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Catch the Falling Objects</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ <!--score board-->
+    <div id="game-container">
+    <div id="scoreboard">
+      <span id="score">Score: 0</span>
+      <span id="lives">Lives: 3</span>
+    </div>
+    <div id="basket"></div>
+  </div>
+  <!-- end Game Window -->
+  <div id="game-over">
+    <h1>Game Over</h1>
+    <p id="final-score"></p>
+    <button id="restart-btn">Restart</button>
+  </div>
+
+  <!-- Start Game Window -->
+<div id="start-game">
+  <h1>Start Game</h1>
+  <p>Press the button below to begin</p>
+  <button id="start-btn">Start</button>
+</div>
+
+  <!-- audio -->
+  <audio id="start-sound"><source src="assets/start.mp3" type="audio/mp3"></audio>
+  <audio id="catch-sound"><source src="assets/catch.mp3" type="audio/mp3"></audio>
+  <audio id="miss-sound" ><source src="assets/miss.mp3" type="audio/mp3"></audio>
+  <audio id="gameover-sound"><source src="assets/game over.mp3" type="audio/mp3"></audio>
+  
+  
+  <script src="script.js"></script>
+</body>
+</html>
